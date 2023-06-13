@@ -1,0 +1,212 @@
+body {
+    background-color: #252525;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.errorMsg {
+    display: block;
+    color: red;
+}
+
+input[type=text] {
+    height: 25px;
+    background-color: #131313;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+
+input[type=password] {
+    height: 25px;
+    background-color: #131313;
+    color: white;
+    border-color: #101010;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+select {
+    height: 37px;
+    background-color: #131313;
+    color: white;
+    border-color: #101010;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    color: white;
+    height: 50px;
+}
+
+.error {
+    border: 1px solid red !important;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image:url("../images/hockey.webp");
+        /* photo taken from: https://unsplash.com/photos/iks9hBNKa6E */ 
+        background-size: cover;
+    }
+    h1{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 250px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    
+    form {
+        margin-top: 75px;
+        width: 500px;
+        margin-left: 20%;
+        background-color: #292929f5;
+        padding: 20px;
+        padding-bottom: 30px;
+        border: 5px solid #292929;
+        border-radius: 10px;
+
+    }
+    #email {
+        width: 250px;
+    }
+    label{
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+    }  
+    p{
+        text-align: left;
+    }
+    select:focus {
+        border: 1px solid dodgerblue;
+    }
+    input[type=text]:focus {
+        border: 1px solid dodgerblue;
+    }
+    input[type=password]:focus {
+        border: 1px solid dodgerblue;
+    }
+    .errorMsg{
+        margin-left: 205px;
+    }
+    input[type=submit]{
+        border-radius: 5px;
+        width: 150px;
+        background-color: dodgerblue;
+        border: 3px solid rgb(0, 125, 250);
+        margin-left: 205px;
+    }
+    input[type=submit]:hover{
+        background-color: rgb(97, 176, 255);
+        border: 3px solid rgb(69, 162, 255);
+    }
+    #pa-container{
+        background-color: #292929f5;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30vh;
+        padding: 30px;
+        width: 500px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #pa{
+        font-size: 2em;
+        text-align: center;
+    }
+    a{
+        font-size: 1.5em;
+        color: dodgerblue;
+        width: 200px; 
+    }
+    a:hover{
+        color: rgb(119, 187, 255);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .errorMsg {
+        width: 80%;
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    label {
+        display: block;
+        font-size: 1em;
+        text-align: left;
+        width: 80%;
+        margin-bottom: 5px;
+        margin-left: 10%;
+    }
+
+    ::placeholder {
+        color: #646464;
+    }
+
+    input[type=text] {
+        width: 80%;
+        height: 30px;
+    }
+
+    input[type=password] {
+        width: 80%;
+        height: 30px;
+    }
+
+    select {
+        width: 82.5%;
+        height: 44px;
+    }
+    
+    #checkboxPara{
+        text-align: left;
+    }
+    input[type=checkbox]{
+        width: 20%;
+        text-align: left;
+       
+    }
+
+    input[type=submit] {
+        border-radius: 30px;
+        width: 80%;
+        border: 1px solid dodgerblue;
+        background-color: dodgerblue;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pa{
+        font-size: 2em;
+    }
+    a{
+        font-size: 1.5em;
+        color: dodgerblue;
+        width: 200px; 
+    }
+    a:hover{
+        color: rgb(119, 187, 255);
+    }
+}
